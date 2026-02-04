@@ -86,16 +86,6 @@ if __name__ == "__main__":
     parser.add_argument("-r", "--report", dest="report_type",
                         nargs=1, help="reprots methods", required=True,
                         choices=["average-gdp"])
-    # TODO filters
-    # parser.add_argument("-y", "--year-range", dest="list_year",
-    #                     nargs=1, required=False,
-    #                     help="example: '2000' or '2000-2025'")
-    # parser.add_argument("-c", "--countrys", dist="list_country",
-    #                     nargs=1, required=False,
-    #                     help="example: '!Russia, Belarus, Greece'")
-    # parser.add_argument("-C", "--continents", dist="list_continents",
-    #                     nargs=1, required=False,
-    #                     help="example: 'Europe, Africa, Asia'")
 
     args = parser.parse_args()
     reader = make_reader(args.files)
